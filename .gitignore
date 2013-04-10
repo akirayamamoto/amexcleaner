@@ -1,0 +1,37 @@
+# https://github.com/github/gitignore/blob/master/Global/Eclipse.gitignore
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+
+# https://github.com/github/gitignore/blob/master/Python.gitignore
+*.py[cod]
+
+# C extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info
+.installed.cfg
+bin/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+__pycache__
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
