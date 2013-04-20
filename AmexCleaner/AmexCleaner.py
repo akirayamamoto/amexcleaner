@@ -16,7 +16,7 @@ Como utilizar:
     Execute este script, o arquivo de saida sera salvo como output.csv;
 
 Input (no header):
-    19/03/2012,, # BILL START DATE 
+    19/03/2012,DATA INICIAL DA FATURA, 
     29/06/2012,Outflow description,R$ #.###,##
     30/06/2012,Inflow description,- R$ #.###,##
 
@@ -48,24 +48,17 @@ def cleanRow(row):
     for (index, cell) in enumerate(row):
         row[index] = cleanString(cell)
     
-def convertToYnabRow(row, billStartDate):
+def convertToYnabRow(row, billStartDate, inputDateFormat, outputDateFormat):
     # returns YNAB formatted row
 
+    # Date, Payee, Category, Memo, Outflow, Inflow
     ynabRow = ['', '', '', '', '', '']
     
-    # row[0] from '30/06/2012' to '06/30/2012'
-    # try:
-    transactionDate = datetime.strptime(row[0], '%d/%m/%Y')
-    ynabRow[0] = transactionDate.strftime('%m/%d/%Y')
-    # except ValueError, error:
-    #    print str(error)
-    #    pass
+    transactionDate = datetime.strptime(row[0], inputDateFormat)
+    ynabRow[0] = transactionDate.strftime(outputDateFormat)
     
     # row[1] description
     ynabRow[1] = row[1]
-    
-    # Category
-    ynabRow[2] = ''
     
     # Memo
     installmentNum = re.search('COMPRA PARCELADA PRESTACAO (\d)+ DE', row[1], re.IGNORECASE)
@@ -75,17 +68,17 @@ def convertToYnabRow(row, billStartDate):
         while installmentDate < billStartDate:
             installmentDate += relativedelta(months=1)
         
-        ynabRow[0] = installmentDate.strftime('%m/%d/%Y')
+        ynabRow[0] = installmentDate.strftime(outputDateFormat)
         ynabRow[3] = 'Data da compra: ' + transactionDate.strftime('%Y-%m-%d')
     else:
         ynabRow[3] = ''
     
     # row[2] from 'R$ #.###,##' to '####.##'
-    row[2] = re.sub(r'[^(\d,\-)]+', '', row[2])  # removes anything but numbers, '-' and '.'
+    row[2] = re.sub(r'[^(\d,\-)]+', '', row[2])  # removes anything but numbers, '-' and ','
     # row[2] = re.sub(r'[\sR$\.\-]+', '', row[2]) # removes whitespaces, 'R', '$', '-' and '.'
     row[2] = row[2].replace(',', '.')  # replaces the decimal separator from ',' to '.'
     
-    moneyValue = float(row[2])  # generally positive number means debit in credit card bills
+    moneyValue = float(row[2])  # positive number means debit in credit card bills
     if moneyValue > 0:
         ynabRow[4] = moneyValue  # outflow
     else:
@@ -93,7 +86,7 @@ def convertToYnabRow(row, billStartDate):
     
     return ynabRow
 
-def processCsv(inputCsvFile, outputCsvFile, inputDelimiter, outputDelimiter):
+def processCsv(inputCsvFile, outputCsvFile, inputDelimiter, outputDelimiter, inputDateFormat, outputDateFormat):
     linesWritten = 0
 
     # read binary mode
@@ -110,23 +103,26 @@ def processCsv(inputCsvFile, outputCsvFile, inputDelimiter, outputDelimiter):
             firstRow = reader.next()
 
             billStartDate = datetime.strptime(firstRow[0], # first cell
-                                                       '%d/%m/%Y')
+                                                       inputDateFormat)
             
             if firstRow[1] != 'DATA INICIAL DA FATURA':
-                print 'First line should be: DD/MM/YYY,DATA INICIAL DA FATURA,'
+                print 'First line should be: "' + inputDateFormat + ',DATA INICIAL DA FATURA,"'
                 return 0
 
             for row in reader:
                 cleanRow(row)
                 
-                writer.writerow(convertToYnabRow(row, billStartDate))
+                writer.writerow(convertToYnabRow(row, billStartDate, inputDateFormat, outputDateFormat))
                 linesWritten += 1
 
     return linesWritten
 
 def main():
     try:
-        print str(processCsv('input.csv', 'output.csv', inputDelimiter=',', outputDelimiter=',')) + ' lines written'
+        print str(processCsv('input.csv', 'output.csv',
+                             inputDelimiter=',', outputDelimiter=',',
+                             inputDateFormat='%d/%m/%Y', outputDateFormat='%d/%m/%Y'
+                             )) + ' lines written'
     except Exception, exception:
         print 'Exception: ' + str(exception)
         pass
