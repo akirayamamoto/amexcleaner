@@ -1,9 +1,25 @@
 '''
 Created on 13/01/2013
 
-@author: Akira
+@author: Akira Yamamoto
+
+Como utilizar:
+    Instale a extensao Scraper do Chrome (https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd)
+        ou algo similar;
+    
+    Exporte a tabela HTML da fatura SEM O CABECALHO para uma panilha do Google Drive;
+    
+    No Google Drive, clicar em File, Download as, CSV;
+    
+    Mova o arquivo para a mesma pasta deste script, salvando como input.csv;
+    
+    Execute este script, o arquivo de saida sera salvo como output.csv;
+
+
 
 Tratar datas de compras parceladas, as datas sao do dia da compra, nao do dia da parcela
+Identificar a primeira compra a vista por data
+Adicionar um mes na data da compra parcelada ate que a data seja maior ou igual a data da primeira compra a vista
 '''
 
 import csv
@@ -28,9 +44,14 @@ def cleanRow(row):
         row[index] = cleanString(cell)
     
 def converToYnabRow(row):
-    # returns YNAB row
+    # returns YNAB formatted row
     
     '''
+    Input (no header):
+    29/06/2012,Outflow description,R$ #.###,##
+    30/06/2012,Inflow description,- R$ #.###,##
+    
+    Output:
     Date,Payee,Category,Memo,Outflow,Inflow
     07/25/10,Sample Payee,,Sample Memo for an outflow,100.00,
     07/26/10,Sample Payee 2,,Sample memo for an inflow,,500.00
@@ -59,31 +80,26 @@ def converToYnabRow(row):
     # row[2] = re.sub(r'[\sR$\.\-]+', '', row[2]) # removes whitespaces, 'R', '$', '-' and '.'
     row[2] = row[2].replace(',', '.')  # replaces the decimal separator from ',' to '.'
     
-    moneyValue = float(row[2]) # generally positive number means debit
+    moneyValue = float(row[2])  # generally positive number means debit in credit card bills
     if moneyValue > 0:
-        ynabRow[4] = moneyValue # outflow
+        ynabRow[4] = moneyValue  # outflow
     else:
-        ynabRow[5] = -1 * moneyValue # inflow
+        ynabRow[5] = -1 * moneyValue  # inflow
     
     return ynabRow
 
-def main():
-    inputDelimiter = ','
-    outputDelimiter = ','
-    
-    inputCsvFile = 'input.csv'
-    outputCsvFile = 'output.csv'
-    
-    with open(inputCsvFile, 'rb'  # read binary mode
-              ) as readFile:
-        with open(outputCsvFile, 'wb'  # write binary mode
-                  ) as writeFile:
+def processCsv(inputCsvFile, outputCsvFile, inputDelimiter, outputDelimiter):
+    linesWritten = 0
+
+    # read binary mode
+    with open(inputCsvFile, 'rb') as readFile:
+        
+        # write binary mode
+        with open(outputCsvFile, 'wb') as writeFile:
             
             reader = csv.reader(readFile, delimiter=inputDelimiter)
             writer = csv.writer(writeFile, delimiter=outputDelimiter)
 
-            linesWritten = 0
-            
             writer.writerow(['Date', 'Payee', 'Category', 'Memo', 'Outflow', 'Inflow'])
 
             for row in reader:
@@ -92,17 +108,20 @@ def main():
                 writer.writerow(converToYnabRow(row))
                 linesWritten += 1
 
-    print str(linesWritten) + ' lines written'
+    return linesWritten
 
-if __name__ == '__main__':
+def main():
     try:
-        # when this script is called from command line we will call main()
-        main()
+        print str(processCsv('input.csv', 'output.csv', inputDelimiter=',', outputDelimiter=',')) + ' lines written'
     except Exception, exception:
-        print str(exception)
+        print 'Exception: ' + str(exception)
         pass
 
     input('Press enter to continue...')
+
+if __name__ == '__main__':
+    # when this script is called from command line we will call main()
+    main()
 
 '''
 Date,Payee,Category,Memo,Outflow,Inflow
