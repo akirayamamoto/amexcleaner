@@ -15,16 +15,21 @@ Como utilizar:
     
     Execute este script, o arquivo de saida sera salvo como output.csv;
 
+Input (no header):
+    19/03/2012,, # BILL START DATE 
+    29/06/2012,Outflow description,R$ #.###,##
+    30/06/2012,Inflow description,- R$ #.###,##
 
-
-Tratar datas de compras parceladas, as datas sao do dia da compra, nao do dia da parcela
-Identificar a primeira compra a vista por data
-Adicionar um mes na data da compra parcelada ate que a data seja maior ou igual a data da primeira compra a vista
+Output:
+    Date,Payee,Category,Memo,Outflow,Inflow
+    07/25/10,Sample Payee,,Sample Memo for an outflow,100.00,
+    07/26/10,Sample Payee 2,,Sample memo for an inflow,,500.00
 '''
 
 import csv
-import datetime
 import re
+from datetime import datetime
+from dateutil.relativedelta import relativedelta
 
 def cleanString(stringToClean):
     # returns the string cleaned
@@ -43,25 +48,15 @@ def cleanRow(row):
     for (index, cell) in enumerate(row):
         row[index] = cleanString(cell)
     
-def converToYnabRow(row):
+def convertToYnabRow(row, billStartDate):
     # returns YNAB formatted row
-    
-    '''
-    Input (no header):
-    29/06/2012,Outflow description,R$ #.###,##
-    30/06/2012,Inflow description,- R$ #.###,##
-    
-    Output:
-    Date,Payee,Category,Memo,Outflow,Inflow
-    07/25/10,Sample Payee,,Sample Memo for an outflow,100.00,
-    07/26/10,Sample Payee 2,,Sample memo for an inflow,,500.00
-    '''
-    
+
     ynabRow = ['', '', '', '', '', '']
     
     # row[0] from '30/06/2012' to '06/30/2012'
     # try:
-    ynabRow[0] = datetime.datetime.strptime(row[0], '%d/%m/%Y').strftime('%m/%d/%Y')
+    transactionDate = datetime.strptime(row[0], '%d/%m/%Y')
+    ynabRow[0] = transactionDate.strftime('%m/%d/%Y')
     # except ValueError, error:
     #    print str(error)
     #    pass
@@ -73,7 +68,17 @@ def converToYnabRow(row):
     ynabRow[2] = ''
     
     # Memo
-    ynabRow[3] = ''
+    installmentNum = re.search('COMPRA PARCELADA PRESTACAO (\d)+ DE', row[1], re.IGNORECASE)
+    if installmentNum and int(installmentNum.group(1)) > 1:
+        installmentDate = transactionDate
+        
+        while installmentDate < billStartDate:
+            installmentDate += relativedelta(months=1)
+        
+        ynabRow[0] = installmentDate.strftime('%m/%d/%Y')
+        ynabRow[3] = 'Data da compra: ' + transactionDate.strftime('%Y-%m-%d')
+    else:
+        ynabRow[3] = ''
     
     # row[2] from 'R$ #.###,##' to '####.##'
     row[2] = re.sub(r'[^(\d,\-)]+', '', row[2])  # removes anything but numbers, '-' and '.'
@@ -101,11 +106,20 @@ def processCsv(inputCsvFile, outputCsvFile, inputDelimiter, outputDelimiter):
             writer = csv.writer(writeFile, delimiter=outputDelimiter)
 
             writer.writerow(['Date', 'Payee', 'Category', 'Memo', 'Outflow', 'Inflow'])
+            
+            firstRow = reader.next()
+
+            billStartDate = datetime.strptime(firstRow[0], # first cell
+                                                       '%d/%m/%Y')
+            
+            if firstRow[1] != 'DATA INICIAL DA FATURA':
+                print 'First line should be: DD/MM/YYY,DATA INICIAL DA FATURA,'
+                return 0
 
             for row in reader:
                 cleanRow(row)
                 
-                writer.writerow(converToYnabRow(row))
+                writer.writerow(convertToYnabRow(row, billStartDate))
                 linesWritten += 1
 
     return linesWritten
