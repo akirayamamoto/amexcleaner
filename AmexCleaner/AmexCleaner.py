@@ -2,6 +2,8 @@
 Created on 13/01/2013
 
 @author: Akira
+
+Tratar datas de compras parceladas, as datas sao do dia da compra, nao do dia da parcela
 '''
 
 import csv
