@@ -16,9 +16,9 @@ Como utilizar:
     Execute este script, o arquivo de saida sera salvo como output.csv;
 
 Input (no header):
-    19/03/2012,DATA INICIAL DA FATURA, 
-    29/06/2012,Outflow description,R$ #.###,##
-    30/06/2012,Inflow description,- R$ #.###,##
+    # Date, Description, Amount, Bill Start Date
+    29/06/2012,Outflow description,R$ #.###,##, 01/06/2012
+    30/06/2012,Inflow description,- R$ #.###,##, 01/06/2012
 
 Output:
     Date,Payee,Category,Memo,Outflow,Inflow
@@ -49,10 +49,12 @@ def cleanRow(row):
     for (index, cell) in enumerate(row):
         row[index] = cleanString(cell)
     
-def convertToYnabRow(row, billStartDate, inputDateFormat, outputDateFormat):
+def convertToYnabRow(row, inputDateFormat, outputDateFormat):
     # returns YNAB formatted row
 
-    # Date, Payee, Category, Memo, Outflow, Inflow
+    # from: Date, Description, Amount, Bill Start Date
+    # to: Date, Payee, Category, Memo, Outflow, Inflow
+    
     ynabRow = ['', '', '', '', '', '']
     
     transactionDate = datetime.strptime(row[0], inputDateFormat)
@@ -63,11 +65,13 @@ def convertToYnabRow(row, billStartDate, inputDateFormat, outputDateFormat):
     
     # Memo
     installmentNum = re.search('COMPRA PARCELADA PRESTACAO (\d)+ DE', row[1], re.IGNORECASE)
-    if installmentNum and int(installmentNum.group(1)) > 1:
+    if installmentNum and int(installmentNum.group(1)) > 1: # prestacao > 1
         installmentDate = transactionDate
         
-        while installmentDate < billStartDate:
-            installmentDate += relativedelta(months=1)
+        billStartDate = datetime.strptime(row[3], inputDateFormat)
+        
+        while installmentDate < billStartDate: # data da prestacao < data inicial da fatura
+            installmentDate += relativedelta(months=1) # data da prestacao += 1 mes 
         
         ynabRow[0] = installmentDate.strftime(outputDateFormat)
         ynabRow[3] = 'Data da compra: ' + transactionDate.strftime('%Y-%m-%d')
@@ -101,19 +105,10 @@ def processCsv(inputCsvFile, outputCsvFile, inputDelimiter, outputDelimiter, inp
 
             writer.writerow(['Date', 'Payee', 'Category', 'Memo', 'Outflow', 'Inflow'])
             
-            firstRow = reader.next()
-
-            billStartDate = datetime.strptime(firstRow[0],  # first cell
-                                                       inputDateFormat)
-            
-            if firstRow[1] != 'DATA INICIAL DA FATURA':
-                print 'First line should be: "' + inputDateFormat + ',DATA INICIAL DA FATURA,"'
-                return 0
-
             for row in reader:
                 cleanRow(row)
                 
-                writer.writerow(convertToYnabRow(row, billStartDate, inputDateFormat, outputDateFormat))
+                writer.writerow(convertToYnabRow(row, inputDateFormat, outputDateFormat))
                 linesWritten += 1
 
     return linesWritten

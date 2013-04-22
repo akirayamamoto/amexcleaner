@@ -11,7 +11,7 @@
             </SONRS>
             </SIGNONMSGSRSV1>
             <BANKMSGSRSV1><STMTTRNRS>
-                <TRNUID>1366606653</TRNUID>
+                <TRNUID>1366608128</TRNUID>
                 <STATUS><CODE>0</CODE><SEVERITY>INFO</SEVERITY></STATUS>
                 
         
@@ -29,222 +29,236 @@
             
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130214</DTPOSTED>
-                            <TRNAMT>-380.07</TRNAMT>
-                            <FITID>-1726715797</FITID>
+                            <DTPOSTED>20130104</DTPOSTED>
+                            <TRNAMT>-89.23</TRNAMT>
+                            <FITID>-1677797579</FITID>
                             
                 
-                            <CHECKNUM>-1726715797</CHECKNUM>
+                            <CHECKNUM>-1677797579</CHECKNUM>
                 
-                            <NAME>TAM CALL CEN GDS AMADE SAO PAULO SP COMPRA PARCELADA PRESTACAO 06 DE 06</NAME>
+                            <NAME>QATAR AIRWAYS PARCELAD COMPRA PARCELADA PRESTACAO 05 DE 05</NAME>
+                            <MEMO>Data da compra: 2012-09-04</MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130114</DTPOSTED>
+                            <TRNAMT>-380.05</TRNAMT>
+                            <FITID>1416780355</FITID>
+                            
+                
+                            <CHECKNUM>1416780355</CHECKNUM>
+                
+                            <NAME>TAM CALL CEN GDS AMADE SAO PAULO SP COMPRA PARCELADA PRESTACAO 05 DE 06</NAME>
                             <MEMO>Data da compra: 2012-09-14</MEMO>
                 
                         </STMTTRN>
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130122</DTPOSTED>
+                            <DTPOSTED>20121222</DTPOSTED>
                             <TRNAMT>-33.98</TRNAMT>
-                            <FITID>1364136580</FITID>
+                            <FITID>1063810793</FITID>
                             
                 
-                            <CHECKNUM>1364136580</CHECKNUM>
+                            <CHECKNUM>1063810793</CHECKNUM>
                 
-                            <NAME>MAGAZINE LUIZA.COM FRANCA SP COMPRA PARCELADA PRESTACAO 05 DE 05</NAME>
+                            <NAME>MAGAZINE LUIZA.COM FRANCA SP COMPRA PARCELADA PRESTACAO 04 DE 05</NAME>
                             <MEMO>Data da compra: 2012-09-22</MEMO>
                 
                         </STMTTRN>
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130208</DTPOSTED>
-                            <TRNAMT>-28.12</TRNAMT>
-                            <FITID>409788181</FITID>
+                            <DTPOSTED>20130104</DTPOSTED>
+                            <TRNAMT>-477.93</TRNAMT>
+                            <FITID>1396949573</FITID>
                             
                 
-                            <CHECKNUM>409788181</CHECKNUM>
+                            <CHECKNUM>1396949573</CHECKNUM>
                 
-                            <NAME>LE POSTICHE VOTORANTIM SP COMPRA PARCELADA PRESTACAO 04 DE 08</NAME>
+                            <NAME>KLM RIO DE JANEIRO RJ COMPRA PARCELADA PRESTACAO 04 DE 04</NAME>
+                            <MEMO>Data da compra: 2012-10-04</MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130105</DTPOSTED>
+                            <TRNAMT>-22.52</TRNAMT>
+                            <FITID>597329339</FITID>
+                            
+                
+                            <CHECKNUM>597329339</CHECKNUM>
+                
+                            <NAME>SMART BRAND SAO PAULO SP COMPRA PARCELADA PRESTACAO 04 DE 04</NAME>
+                            <MEMO>Data da compra: 2012-10-05</MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130108</DTPOSTED>
+                            <TRNAMT>-28.12</TRNAMT>
+                            <FITID>-1045131457</FITID>
+                            
+                
+                            <CHECKNUM>-1045131457</CHECKNUM>
+                
+                            <NAME>LE POSTICHE 379 VOTORANTIM SP COMPRA PARCELADA PRESTACAO 03 DE 08</NAME>
                             <MEMO>Data da compra: 2012-11-08</MEMO>
                 
                         </STMTTRN>
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130201</DTPOSTED>
-                            <TRNAMT>-27.48</TRNAMT>
-                            <FITID>1216031094</FITID>
+                            <DTPOSTED>20130101</DTPOSTED>
+                            <TRNAMT>-27.47</TRNAMT>
+                            <FITID>1016337462</FITID>
                             
                 
-                            <CHECKNUM>1216031094</CHECKNUM>
+                            <CHECKNUM>1016337462</CHECKNUM>
                 
-                            <NAME>DROGARIA S PAULO 511 SAO PAULO SP COMPRA PARCELADA PRESTACAO 03 DE 03</NAME>
+                            <NAME>DROGARIA S PAULO 511 SAO PAULO SP COMPRA PARCELADA PRESTACAO 02 DE 03</NAME>
                             <MEMO>Data da compra: 2012-12-01</MEMO>
                 
                         </STMTTRN>
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130202</DTPOSTED>
+                            <DTPOSTED>20130102</DTPOSTED>
                             <TRNAMT>-5.34</TRNAMT>
-                            <FITID>1690565153</FITID>
+                            <FITID>-2129015858</FITID>
                             
                 
-                            <CHECKNUM>1690565153</CHECKNUM>
+                            <CHECKNUM>-2129015858</CHECKNUM>
                 
-                            <NAME>SUBMARINO SAO PAULO SP COMPRA PARCELADA PRESTACAO 03 DE 12</NAME>
+                            <NAME>SUBMARINO SAO PAULO SP COMPRA PARCELADA PRESTACAO 02 DE 12</NAME>
                             <MEMO>Data da compra: 2012-12-02</MEMO>
                 
                         </STMTTRN>
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130208</DTPOSTED>
-                            <TRNAMT>-12.74</TRNAMT>
-                            <FITID>877084972</FITID>
+                            <DTPOSTED>20130103</DTPOSTED>
+                            <TRNAMT>-13.73</TRNAMT>
+                            <FITID>-1651265045</FITID>
                             
                 
-                            <CHECKNUM>877084972</CHECKNUM>
+                            <CHECKNUM>-1651265045</CHECKNUM>
                 
-                            <NAME>EXTRA COM COMPRA PARCELADA PRESTACAO 03 DE 12</NAME>
+                            <NAME>EXTRA.COM COMPRA PARCELADA PRESTACAO 02 DE 02</NAME>
+                            <MEMO>Data da compra: 2012-12-03</MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130108</DTPOSTED>
+                            <TRNAMT>-12.74</TRNAMT>
+                            <FITID>576811966</FITID>
+                            
+                
+                            <CHECKNUM>576811966</CHECKNUM>
+                
+                            <NAME>EXTRA COM COMPRA PARCELADA PRESTACAO 02 DE 12</NAME>
                             <MEMO>Data da compra: 2012-12-08</MEMO>
                 
                         </STMTTRN>
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130121</DTPOSTED>
-                            <TRNAMT>-23.84</TRNAMT>
-                            <FITID>-1520311246</FITID>
+                            <DTPOSTED>20130117</DTPOSTED>
+                            <TRNAMT>-110.6</TRNAMT>
+                            <FITID>-1803451784</FITID>
                             
                 
-                            <CHECKNUM>-1520311246</CHECKNUM>
+                            <CHECKNUM>-1803451784</CHECKNUM>
                 
-                            <NAME>JARDIM LEOPOLDINA SAO PAULO SP Lanchonete</NAME>
+                            <NAME>REI DO OLEO SAO PAULO SP COMPRA PARCELADA PRESTACAO 02 DE 02</NAME>
+                            <MEMO>Data da compra: 2012-12-17</MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20121219</DTPOSTED>
+                            <TRNAMT>-99.93</TRNAMT>
+                            <FITID>-1226900791</FITID>
+                            
+                
+                            <CHECKNUM>-1226900791</CHECKNUM>
+                
+                            <NAME>PAYPAL *NMICROTECHN 46.48 Dólar Norte-Americano US$ convertidos R$ ao câmbio de 02,15</NAME>
                             <MEMO></MEMO>
                 
                         </STMTTRN>
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130122</DTPOSTED>
-                            <TRNAMT>-27.28</TRNAMT>
-                            <FITID>816543786</FITID>
+                            <DTPOSTED>20121222</DTPOSTED>
+                            <TRNAMT>-30.0</TRNAMT>
+                            <FITID>-649373316</FITID>
                             
                 
-                            <CHECKNUM>816543786</CHECKNUM>
+                            <CHECKNUM>-649373316</CHECKNUM>
                 
-                            <NAME>JARDIM LEOPOLDINA SAO PAULO SP Lanchonete</NAME>
+                            <NAME>CELEIRO DA GRANJA CARAPICUIBA SP Restaurante</NAME>
                             <MEMO></MEMO>
                 
                         </STMTTRN>
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130122</DTPOSTED>
-                            <TRNAMT>-78.6</TRNAMT>
-                            <FITID>-1800212283</FITID>
+                            <DTPOSTED>20121222</DTPOSTED>
+                            <TRNAMT>-105.0</TRNAMT>
+                            <FITID>-939554436</FITID>
                             
                 
-                            <CHECKNUM>-1800212283</CHECKNUM>
+                            <CHECKNUM>-939554436</CHECKNUM>
                 
-                            <NAME>INGRESSO PONTO COM RIO DE JANEIRO RJ Produtor de teatro e evento</NAME>
+                            <NAME>S M SAO PAULO SP Hotéis e Resorts</NAME>
                             <MEMO></MEMO>
                 
                         </STMTTRN>
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130123</DTPOSTED>
-                            <TRNAMT>-27.99</TRNAMT>
-                            <FITID>879441245</FITID>
+                            <DTPOSTED>20121223</DTPOSTED>
+                            <TRNAMT>-74.25</TRNAMT>
+                            <FITID>-697046890</FITID>
                             
                 
-                            <CHECKNUM>879441245</CHECKNUM>
+                            <CHECKNUM>-697046890</CHECKNUM>
                 
-                            <NAME>JARDIM LEOPOLDINA SAO PAULO SP Lanchonete</NAME>
+                            <NAME>RASCAL SAO PAULO SP Restaurante</NAME>
                             <MEMO></MEMO>
                 
                         </STMTTRN>
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130123</DTPOSTED>
-                            <TRNAMT>-410.0</TRNAMT>
-                            <FITID>1379016824</FITID>
+                            <DTPOSTED>20121224</DTPOSTED>
+                            <TRNAMT>-64.69</TRNAMT>
+                            <FITID>-1039460748</FITID>
                             
                 
-                            <CHECKNUM>1379016824</CHECKNUM>
+                            <CHECKNUM>-1039460748</CHECKNUM>
                 
-                            <NAME>PARADISE CHALES CARAGUATATUBA SP Hotéis e Resorts</NAME>
+                            <NAME>PAYPAL 29.95 Dólar Norte-Americano US$ convertidos R$ ao câmbio de 02,16</NAME>
                             <MEMO></MEMO>
                 
                         </STMTTRN>
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130124</DTPOSTED>
-                            <TRNAMT>-410.0</TRNAMT>
-                            <FITID>347824079</FITID>
-                            
-                
-                            <CHECKNUM>347824079</CHECKNUM>
-                
-                            <NAME>PARADISE CHALES CARAGUATATUBA SP Hotéis e Resorts</NAME>
-                            <MEMO></MEMO>
-                
-                        </STMTTRN>
-                
-                        <STMTTRN>
-                            <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130125</DTPOSTED>
-                            <TRNAMT>-60.56</TRNAMT>
-                            <FITID>1447768652</FITID>
-                            
-                
-                            <CHECKNUM>1447768652</CHECKNUM>
-                
-                            <NAME>POSTO BANDEIRAS SAO PAULO SP Posto de abastecimento</NAME>
-                            <MEMO></MEMO>
-                
-                        </STMTTRN>
-                
-                        <STMTTRN>
-                            <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130127</DTPOSTED>
-                            <TRNAMT>-54.44</TRNAMT>
-                            <FITID>2137040048</FITID>
-                            
-                
-                            <CHECKNUM>2137040048</CHECKNUM>
-                
-                            <NAME>PST EXTRA 2766 SAO PAULO SP Posto de abastecimento</NAME>
-                            <MEMO></MEMO>
-                
-                        </STMTTRN>
-                
-                        <STMTTRN>
-                            <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130127</DTPOSTED>
-                            <TRNAMT>-19.5</TRNAMT>
-                            <FITID>-613062985</FITID>
-                            
-                
-                            <CHECKNUM>-613062985</CHECKNUM>
-                
-                            <NAME>MCDONALD S SVS SOROCABA SP Restaurante</NAME>
-                            <MEMO></MEMO>
-                
-                        </STMTTRN>
-                
-                        <STMTTRN>
-                            <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130127</DTPOSTED>
+                            <DTPOSTED>20121226</DTPOSTED>
                             <TRNAMT>-50.0</TRNAMT>
-                            <FITID>-429234363</FITID>
+                            <FITID>-234194814</FITID>
                             
                 
-                            <CHECKNUM>-429234363</CHECKNUM>
+                            <CHECKNUM>-234194814</CHECKNUM>
                 
                             <NAME>SEM PARAR VIA FACIL OSASCO SP Pedágios</NAME>
                             <MEMO></MEMO>
@@ -253,68 +267,96 @@
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130128</DTPOSTED>
-                            <TRNAMT>-135.6</TRNAMT>
-                            <FITID>152549159</FITID>
+                            <DTPOSTED>20121227</DTPOSTED>
+                            <TRNAMT>-71.01</TRNAMT>
+                            <FITID>-690658582</FITID>
                             
                 
-                            <CHECKNUM>152549159</CHECKNUM>
+                            <CHECKNUM>-690658582</CHECKNUM>
                 
-                            <NAME>EHG SOROCABA SP Hotéis e Resorts</NAME>
+                            <NAME>POSTO BATALHA SAO PAULO SP Posto de abastecimento</NAME>
                             <MEMO></MEMO>
                 
                         </STMTTRN>
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130130</DTPOSTED>
-                            <TRNAMT>-20.25</TRNAMT>
-                            <FITID>-744965201</FITID>
+                            <DTPOSTED>20121227</DTPOSTED>
+                            <TRNAMT>-268.0</TRNAMT>
+                            <FITID>-42950338</FITID>
                             
                 
-                            <CHECKNUM>-744965201</CHECKNUM>
+                            <CHECKNUM>-42950338</CHECKNUM>
                 
-                            <NAME>JARDIM LEOPOLDINA SAO PAULO SP Lanchonete</NAME>
+                            <NAME>AFONSO KIOSHI OGATA SAO PAULO SP Loja de acessórios e peças para veícul</NAME>
                             <MEMO></MEMO>
                 
                         </STMTTRN>
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130130</DTPOSTED>
-                            <TRNAMT>-106.0</TRNAMT>
-                            <FITID>2103704957</FITID>
+                            <DTPOSTED>20121228</DTPOSTED>
+                            <TRNAMT>-25.46</TRNAMT>
+                            <FITID>-1053578378</FITID>
                             
                 
-                            <CHECKNUM>2103704957</CHECKNUM>
+                            <CHECKNUM>-1053578378</CHECKNUM>
                 
-                            <NAME>JC COMPETICOES COTIA SP Centro de serviços automotivos</NAME>
+                            <NAME>VIENA EXP RAPOSO TAVARES COTIA SP Restaurante</NAME>
                             <MEMO></MEMO>
                 
                         </STMTTRN>
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130131</DTPOSTED>
-                            <TRNAMT>-79.14</TRNAMT>
-                            <FITID>846794683</FITID>
+                            <DTPOSTED>20121228</DTPOSTED>
+                            <TRNAMT>-89.5</TRNAMT>
+                            <FITID>1910914452</FITID>
                             
                 
-                            <CHECKNUM>846794683</CHECKNUM>
+                            <CHECKNUM>1910914452</CHECKNUM>
                 
-                            <NAME>CENTER CAR SAO PAULO Posto de abastecimento</NAME>
+                            <NAME>T M COTIA SP Hotéis e Resorts</NAME>
                             <MEMO></MEMO>
                 
                         </STMTTRN>
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130201</DTPOSTED>
+                            <DTPOSTED>20121230</DTPOSTED>
+                            <TRNAMT>-100.26</TRNAMT>
+                            <FITID>277824241</FITID>
+                            
+                
+                            <CHECKNUM>277824241</CHECKNUM>
+                
+                            <NAME>AUTO P PROJETO ECOE BOITUVA SP Posto de abastecimento</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20121231</DTPOSTED>
+                            <TRNAMT>-75.0</TRNAMT>
+                            <FITID>961297089</FITID>
+                            
+                
+                            <CHECKNUM>961297089</CHECKNUM>
+                
+                            <NAME>AUTO POSTO RAMAL SAO PAULO Posto de abastecimento</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20121231</DTPOSTED>
                             <TRNAMT>-50.0</TRNAMT>
-                            <FITID>-1680958680</FITID>
+                            <FITID>-208058323</FITID>
                             
                 
-                            <CHECKNUM>-1680958680</CHECKNUM>
+                            <CHECKNUM>-208058323</CHECKNUM>
                 
                             <NAME>SEM PARAR VIA FACIL OSASCO SP Pedágios</NAME>
                             <MEMO></MEMO>
@@ -323,12 +365,26 @@
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130201</DTPOSTED>
+                            <DTPOSTED>20121231</DTPOSTED>
+                            <TRNAMT>-53.25</TRNAMT>
+                            <FITID>87578555</FITID>
+                            
+                
+                            <CHECKNUM>87578555</CHECKNUM>
+                
+                            <NAME>PAYPAL 25.00 Dólar Norte-Americano US$ convertidos R$ ao câmbio de 02,13</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130102</DTPOSTED>
                             <TRNAMT>-26.4</TRNAMT>
-                            <FITID>1947243790</FITID>
+                            <FITID>-1298658081</FITID>
                             
                 
-                            <CHECKNUM>1947243790</CHECKNUM>
+                            <CHECKNUM>-1298658081</CHECKNUM>
                 
                             <NAME>BARELLO SAO PAULO SP Restaurante</NAME>
                             <MEMO></MEMO>
@@ -336,27 +392,13 @@
                         </STMTTRN>
                 
                         <STMTTRN>
-                            <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130201</DTPOSTED>
-                            <TRNAMT>-50.0</TRNAMT>
-                            <FITID>-1680958680</FITID>
-                            
-                
-                            <CHECKNUM>-1680958680</CHECKNUM>
-                
-                            <NAME>SEM PARAR VIA FACIL OSASCO SP Pedágios</NAME>
-                            <MEMO></MEMO>
-                
-                        </STMTTRN>
-                
-                        <STMTTRN>
                             <TRNTYPE>CREDIT</TRNTYPE>
-                            <DTPOSTED>20130201</DTPOSTED>
-                            <TRNAMT>3885.69</TRNAMT>
-                            <FITID>1348921558</FITID>
+                            <DTPOSTED>20130102</DTPOSTED>
+                            <TRNAMT>11490.1</TRNAMT>
+                            <FITID>1340881552</FITID>
                             
                 
-                            <CHECKNUM>1348921558</CHECKNUM>
+                            <CHECKNUM>1340881552</CHECKNUM>
                 
                             <NAME>PAGAMENTO RECEBIDO - OBRIGADO</NAME>
                             <MEMO></MEMO>
@@ -365,82 +407,26 @@
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130203</DTPOSTED>
-                            <TRNAMT>-25.01</TRNAMT>
-                            <FITID>-1864397997</FITID>
+                            <DTPOSTED>20130103</DTPOSTED>
+                            <TRNAMT>-21.45</TRNAMT>
+                            <FITID>-716338621</FITID>
                             
                 
-                            <CHECKNUM>-1864397997</CHECKNUM>
-                
-                            <NAME>POSTO LEISA SOROCABA SP Posto de abastecimento</NAME>
-                            <MEMO></MEMO>
-                
-                        </STMTTRN>
-                
-                        <STMTTRN>
-                            <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130203</DTPOSTED>
-                            <TRNAMT>-157.8</TRNAMT>
-                            <FITID>-283885264</FITID>
-                            
-                
-                            <CHECKNUM>-283885264</CHECKNUM>
-                
-                            <NAME>EHG SOROCABA SP Hotéis e Resorts</NAME>
-                            <MEMO></MEMO>
-                
-                        </STMTTRN>
-                
-                        <STMTTRN>
-                            <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130204</DTPOSTED>
-                            <TRNAMT>-23.84</TRNAMT>
-                            <FITID>549194948</FITID>
-                            
-                
-                            <CHECKNUM>549194948</CHECKNUM>
+                            <CHECKNUM>-716338621</CHECKNUM>
                 
                             <NAME>JARDIM LEOPOLDINA SAO PAULO SP Lanchonete</NAME>
-                            <MEMO></MEMO>
-                
-                        </STMTTRN>
-                
-                        <STMTTRN>
-                            <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130205</DTPOSTED>
-                            <TRNAMT>-26.48</TRNAMT>
-                            <FITID>-2016820149</FITID>
-                            
-                
-                            <CHECKNUM>-2016820149</CHECKNUM>
-                
-                            <NAME>JARDIM LEOPOLDINA SAO PAULO SP Lanchonete</NAME>
-                            <MEMO></MEMO>
-                
-                        </STMTTRN>
-                
-                        <STMTTRN>
-                            <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130205</DTPOSTED>
-                            <TRNAMT>-60.71</TRNAMT>
-                            <FITID>-448390208</FITID>
-                            
-                
-                            <CHECKNUM>-448390208</CHECKNUM>
-                
-                            <NAME>35314369001 17.99 Libra Esterlina Serviços profissionais não especifica</NAME>
                             <MEMO></MEMO>
                 
                         </STMTTRN>
                 
                         <STMTTRN>
                             <TRNTYPE>CREDIT</TRNTYPE>
-                            <DTPOSTED>20130206</DTPOSTED>
-                            <TRNAMT>9.53</TRNAMT>
-                            <FITID>-337527145</FITID>
+                            <DTPOSTED>20130104</DTPOSTED>
+                            <TRNAMT>71.59</TRNAMT>
+                            <FITID>-1523397031</FITID>
                             
                 
-                            <CHECKNUM>-337527145</CHECKNUM>
+                            <CHECKNUM>-1523397031</CHECKNUM>
                 
                             <NAME>CRÉDITO REF VARIAÇÃO CAMBIAL- TAXA: 2,</NAME>
                             <MEMO></MEMO>
@@ -449,12 +435,12 @@
                 
                         <STMTTRN>
                             <TRNTYPE>CREDIT</TRNTYPE>
-                            <DTPOSTED>20130206</DTPOSTED>
-                            <TRNAMT>0.52</TRNAMT>
-                            <FITID>760665386</FITID>
+                            <DTPOSTED>20130104</DTPOSTED>
+                            <TRNAMT>4.57</TRNAMT>
+                            <FITID>-1288521723</FITID>
                             
                 
-                            <CHECKNUM>760665386</CHECKNUM>
+                            <CHECKNUM>-1288521723</CHECKNUM>
                 
                             <NAME>CRÉDITO REF VARIAÇÃO DE IOF - TAXA: 2,</NAME>
                             <MEMO></MEMO>
@@ -463,138 +449,26 @@
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130207</DTPOSTED>
-                            <TRNAMT>-23.05</TRNAMT>
-                            <FITID>1501844345</FITID>
+                            <DTPOSTED>20130105</DTPOSTED>
+                            <TRNAMT>-71.0</TRNAMT>
+                            <FITID>-36763535</FITID>
                             
                 
-                            <CHECKNUM>1501844345</CHECKNUM>
+                            <CHECKNUM>-36763535</CHECKNUM>
                 
-                            <NAME>JARDIM LEOPOLDINA SAO PAULO SP Lanchonete</NAME>
+                            <NAME>AUTO POSTO PAVA CAS ITU SP Posto de abastecimento</NAME>
                             <MEMO></MEMO>
                 
                         </STMTTRN>
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130208</DTPOSTED>
-                            <TRNAMT>-29.6</TRNAMT>
-                            <FITID>1415700990</FITID>
-                            
-                
-                            <CHECKNUM>1415700990</CHECKNUM>
-                
-                            <NAME>DROGARIA S PAULO 214 SAO PAULO SP Drogaria e farmácia</NAME>
-                            <MEMO></MEMO>
-                
-                        </STMTTRN>
-                
-                        <STMTTRN>
-                            <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130208</DTPOSTED>
-                            <TRNAMT>-26.4</TRNAMT>
-                            <FITID>1131929223</FITID>
-                            
-                
-                            <CHECKNUM>1131929223</CHECKNUM>
-                
-                            <NAME>BARELLO SAO PAULO SP Restaurante</NAME>
-                            <MEMO></MEMO>
-                
-                        </STMTTRN>
-                
-                        <STMTTRN>
-                            <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130209</DTPOSTED>
-                            <TRNAMT>-59.41</TRNAMT>
-                            <FITID>-177058461</FITID>
-                            
-                
-                            <CHECKNUM>-177058461</CHECKNUM>
-                
-                            <NAME>POSTO EXTRA LJ 2725 SAO PAULO SP Posto de abastecimento</NAME>
-                            <MEMO></MEMO>
-                
-                        </STMTTRN>
-                
-                        <STMTTRN>
-                            <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130209</DTPOSTED>
-                            <TRNAMT>-140.0</TRNAMT>
-                            <FITID>637506005</FITID>
-                            
-                
-                            <CHECKNUM>637506005</CHECKNUM>
-                
-                            <NAME>TERRACE CALCADOS CAMPOS DO JORDAO SP Loja de calçados</NAME>
-                            <MEMO></MEMO>
-                
-                        </STMTTRN>
-                
-                        <STMTTRN>
-                            <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130209</DTPOSTED>
-                            <TRNAMT>-139.84</TRNAMT>
-                            <FITID>1763111137</FITID>
-                            
-                
-                            <CHECKNUM>1763111137</CHECKNUM>
-                
-                            <NAME>SAFARI CAFE CAMPOS DO JORDAO SP Restaurante</NAME>
-                            <MEMO></MEMO>
-                
-                        </STMTTRN>
-                
-                        <STMTTRN>
-                            <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130211</DTPOSTED>
-                            <TRNAMT>-83.7</TRNAMT>
-                            <FITID>1719245047</FITID>
-                            
-                
-                            <CHECKNUM>1719245047</CHECKNUM>
-                
-                            <NAME>AUT POSTO PERSEVERANCA ARUJA SP Posto de abastecimento</NAME>
-                            <MEMO></MEMO>
-                
-                        </STMTTRN>
-                
-                        <STMTTRN>
-                            <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130211</DTPOSTED>
-                            <TRNAMT>-22.68</TRNAMT>
-                            <FITID>-908427824</FITID>
-                            
-                
-                            <CHECKNUM>-908427824</CHECKNUM>
-                
-                            <NAME>CARREFOUR LJ SPS SAO PAULO SP Mercearia e Supermercados</NAME>
-                            <MEMO></MEMO>
-                
-                        </STMTTRN>
-                
-                        <STMTTRN>
-                            <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130211</DTPOSTED>
-                            <TRNAMT>-13.02</TRNAMT>
-                            <FITID>-1123544184</FITID>
-                            
-                
-                            <CHECKNUM>-1123544184</CHECKNUM>
-                
-                            <NAME>CARREFOUR LJ SPS SAO PAULO SP Mercearia e Supermercados</NAME>
-                            <MEMO></MEMO>
-                
-                        </STMTTRN>
-                
-                        <STMTTRN>
-                            <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130211</DTPOSTED>
+                            <DTPOSTED>20130106</DTPOSTED>
                             <TRNAMT>-50.0</TRNAMT>
-                            <FITID>-787901253</FITID>
+                            <FITID>1800317447</FITID>
                             
                 
-                            <CHECKNUM>-787901253</CHECKNUM>
+                            <CHECKNUM>1800317447</CHECKNUM>
                 
                             <NAME>SEM PARAR VIA FACIL OSASCO SP Pedágios</NAME>
                             <MEMO></MEMO>
@@ -603,12 +477,68 @@
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130213</DTPOSTED>
-                            <TRNAMT>-27.36</TRNAMT>
-                            <FITID>-1217098867</FITID>
+                            <DTPOSTED>20130107</DTPOSTED>
+                            <TRNAMT>-18.75</TRNAMT>
+                            <FITID>307410982</FITID>
                             
                 
-                            <CHECKNUM>-1217098867</CHECKNUM>
+                            <CHECKNUM>307410982</CHECKNUM>
+                
+                            <NAME>MCDONALD S LOB Lanchonete</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130107</DTPOSTED>
+                            <TRNAMT>-21.2</TRNAMT>
+                            <FITID>84625964</FITID>
+                            
+                
+                            <CHECKNUM>84625964</CHECKNUM>
+                
+                            <NAME>PAYPAL 10.00 Dólar Norte-Americano US$ convertidos R$ ao câmbio de 02,12</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130108</DTPOSTED>
+                            <TRNAMT>-50.0</TRNAMT>
+                            <FITID>-1538518008</FITID>
+                            
+                
+                            <CHECKNUM>-1538518008</CHECKNUM>
+                
+                            <NAME>TEMAKERIA SAO PAULO SP Restaurante</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130109</DTPOSTED>
+                            <TRNAMT>-67.08</TRNAMT>
+                            <FITID>-316285467</FITID>
+                            
+                
+                            <CHECKNUM>-316285467</CHECKNUM>
+                
+                            <NAME>POSTO BATALHA SAO PAULO SP Posto de abastecimento</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130110</DTPOSTED>
+                            <TRNAMT>-26.16</TRNAMT>
+                            <FITID>-1311740152</FITID>
+                            
+                
+                            <CHECKNUM>-1311740152</CHECKNUM>
                 
                             <NAME>JARDIM LEOPOLDINA SAO PAULO SP Lanchonete</NAME>
                             <MEMO></MEMO>
@@ -617,40 +547,306 @@
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130215</DTPOSTED>
-                            <TRNAMT>-26.2</TRNAMT>
-                            <FITID>1318240176</FITID>
+                            <DTPOSTED>20130110</DTPOSTED>
+                            <TRNAMT>-15.75</TRNAMT>
+                            <FITID>1672879120</FITID>
                             
                 
-                            <CHECKNUM>1318240176</CHECKNUM>
+                            <CHECKNUM>1672879120</CHECKNUM>
                 
-                            <NAME>COMPRA VIA PAGSEGURO SAO PAULO SP Lan house / Cyber café</NAME>
+                            <NAME>CINEPOLIS BARUERI BARUERI SP Cinema</NAME>
                             <MEMO></MEMO>
                 
                         </STMTTRN>
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130215</DTPOSTED>
-                            <TRNAMT>-308.0</TRNAMT>
-                            <FITID>1032796426</FITID>
+                            <DTPOSTED>20130110</DTPOSTED>
+                            <TRNAMT>-30.0</TRNAMT>
+                            <FITID>-79315733</FITID>
                             
                 
-                            <CHECKNUM>1032796426</CHECKNUM>
+                            <CHECKNUM>-79315733</CHECKNUM>
                 
-                            <NAME>COMPRA VIA PAGSEGURO SAO PAULO SP Lan house / Cyber café</NAME>
+                            <NAME>CINEPOLIS BARUERI BARUERI SP Cinema</NAME>
                             <MEMO></MEMO>
                 
                         </STMTTRN>
                 
                         <STMTTRN>
                             <TRNTYPE>DEBIT</TRNTYPE>
-                            <DTPOSTED>20130216</DTPOSTED>
-                            <TRNAMT>-3.87</TRNAMT>
-                            <FITID>59928516</FITID>
+                            <DTPOSTED>20130111</DTPOSTED>
+                            <TRNAMT>-26.8</TRNAMT>
+                            <FITID>801240003</FITID>
                             
                 
-                            <CHECKNUM>59928516</CHECKNUM>
+                            <CHECKNUM>801240003</CHECKNUM>
+                
+                            <NAME>TEMPERO BRASIL SAO PAULO SP Restaurante</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130111</DTPOSTED>
+                            <TRNAMT>-23.87</TRNAMT>
+                            <FITID>1508668803</FITID>
+                            
+                
+                            <CHECKNUM>1508668803</CHECKNUM>
+                
+                            <NAME>DROG ESTRELA SAO JOSE SAO PAULO SP Drogaria e farmácia</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130111</DTPOSTED>
+                            <TRNAMT>-38.35</TRNAMT>
+                            <FITID>-818079585</FITID>
+                            
+                
+                            <CHECKNUM>-818079585</CHECKNUM>
+                
+                            <NAME>ITUNES MUSICUSA ITUNES MUSICUSA 18.09 Dólar Norte-Americano Loja de eletrônicos</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130112</DTPOSTED>
+                            <TRNAMT>-120.6</TRNAMT>
+                            <FITID>1559365371</FITID>
+                            
+                
+                            <CHECKNUM>1559365371</CHECKNUM>
+                
+                            <NAME>COMEDIANS COMEDY CLUB SAO PAULO SP Bar e restaurante</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130112</DTPOSTED>
+                            <TRNAMT>-125.0</TRNAMT>
+                            <FITID>-235910794</FITID>
+                            
+                
+                            <CHECKNUM>-235910794</CHECKNUM>
+                
+                            <NAME>DHAMEK M EMPREEND LTDA SAO PAULO SP Hotéis e Resorts</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130113</DTPOSTED>
+                            <TRNAMT>-50.0</TRNAMT>
+                            <FITID>1535655520</FITID>
+                            
+                
+                            <CHECKNUM>1535655520</CHECKNUM>
+                
+                            <NAME>SEM PARAR VIA FACIL OSASCO SP Pedágios</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130114</DTPOSTED>
+                            <TRNAMT>-26.4</TRNAMT>
+                            <FITID>2447505</FITID>
+                            
+                
+                            <CHECKNUM>2447505</CHECKNUM>
+                
+                            <NAME>BARELLO SAO PAULO SP Restaurante</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130114</DTPOSTED>
+                            <TRNAMT>-12.53</TRNAMT>
+                            <FITID>56138083</FITID>
+                            
+                
+                            <CHECKNUM>56138083</CHECKNUM>
+                
+                            <NAME>ITUNES MUSICUSA ITUNES MUSICUSA 5.94 Dólar Norte-Americano Loja de eletrônicos</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130115</DTPOSTED>
+                            <TRNAMT>-32.45</TRNAMT>
+                            <FITID>894849009</FITID>
+                            
+                
+                            <CHECKNUM>894849009</CHECKNUM>
+                
+                            <NAME>SUBWAY OSASCO SP Restaurante</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130116</DTPOSTED>
+                            <TRNAMT>-22.51</TRNAMT>
+                            <FITID>-1306464265</FITID>
+                            
+                
+                            <CHECKNUM>-1306464265</CHECKNUM>
+                
+                            <NAME>JARDIM LEOPOLDINA SAO PAULO SP Lanchonete</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130117</DTPOSTED>
+                            <TRNAMT>-169.54</TRNAMT>
+                            <FITID>1639398840</FITID>
+                            
+                
+                            <CHECKNUM>1639398840</CHECKNUM>
+                
+                            <NAME>DROGARIA S PAULO 214 SAO PAULO SP Drogaria e farmácia</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130117</DTPOSTED>
+                            <TRNAMT>-62.41</TRNAMT>
+                            <FITID>-1614309724</FITID>
+                            
+                
+                            <CHECKNUM>-1614309724</CHECKNUM>
+                
+                            <NAME>CENTER CAR SAO PAULO Posto de abastecimento</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130118</DTPOSTED>
+                            <TRNAMT>-55.0</TRNAMT>
+                            <FITID>-1667543002</FITID>
+                            
+                
+                            <CHECKNUM>-1667543002</CHECKNUM>
+                
+                            <NAME>BARELLO BURGUER SAO PAULO SP Restaurante</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130119</DTPOSTED>
+                            <TRNAMT>-120.0</TRNAMT>
+                            <FITID>-941221363</FITID>
+                            
+                
+                            <CHECKNUM>-941221363</CHECKNUM>
+                
+                            <NAME>VILLA COUNTRY MACLE SAO PAULO SP Produtor de teatro e evento</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130119</DTPOSTED>
+                            <TRNAMT>-32.3</TRNAMT>
+                            <FITID>-1319013007</FITID>
+                            
+                
+                            <CHECKNUM>-1319013007</CHECKNUM>
+                
+                            <NAME>RISOTTO MIX SAO PAULO SP Restaurante</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130119</DTPOSTED>
+                            <TRNAMT>-44.99</TRNAMT>
+                            <FITID>1940420448</FITID>
+                            
+                
+                            <CHECKNUM>1940420448</CHECKNUM>
+                
+                            <NAME>COLLINS 36 PLS SAO PAULO SP Loja de variedades</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130120</DTPOSTED>
+                            <TRNAMT>-105.9</TRNAMT>
+                            <FITID>-1322889448</FITID>
+                            
+                
+                            <CHECKNUM>-1322889448</CHECKNUM>
+                
+                            <NAME>CLAUDIO FLORIO SAO PAULO SP Hotéis e Resorts</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130120</DTPOSTED>
+                            <TRNAMT>-75.0</TRNAMT>
+                            <FITID>2037295131</FITID>
+                            
+                
+                            <CHECKNUM>2037295131</CHECKNUM>
+                
+                            <NAME>POSTO SERVICOS AGUA FUNDA SAO PAULO Posto de abastecimento</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130120</DTPOSTED>
+                            <TRNAMT>-43.84</TRNAMT>
+                            <FITID>-211126029</FITID>
+                            
+                
+                            <CHECKNUM>-211126029</CHECKNUM>
+                
+                            <NAME>POSTO CARREFOUR LJ PSN SOROCABA SP Posto de abastecimento</NAME>
+                            <MEMO></MEMO>
+                
+                        </STMTTRN>
+                
+                        <STMTTRN>
+                            <TRNTYPE>DEBIT</TRNTYPE>
+                            <DTPOSTED>20130120</DTPOSTED>
+                            <TRNAMT>-18.51</TRNAMT>
+                            <FITID>-298020638</FITID>
+                            
+                
+                            <CHECKNUM>-298020638</CHECKNUM>
                 
                             <NAME>IOF DESPESA EXTERIOR</NAME>
                             <MEMO></MEMO>
