@@ -37,6 +37,7 @@ def cleanString(stringToClean):
     stringToClean = (stringToClean
         # removes non iso-8859-1 chars
         .decode('utf-8').encode('iso-8859-1', 'ignore')
+        .decode('iso-8859-1').encode('utf-8')
         
         # similar to trim, will remove whitespaces from begin and end 
         .strip())
@@ -102,7 +103,7 @@ def processCsv(inputCsvFile, outputCsvFile, inputDelimiter, outputDelimiter, inp
             
             firstRow = reader.next()
 
-            billStartDate = datetime.strptime(firstRow[0], # first cell
+            billStartDate = datetime.strptime(firstRow[0],  # first cell
                                                        inputDateFormat)
             
             if firstRow[1] != 'DATA INICIAL DA FATURA':
