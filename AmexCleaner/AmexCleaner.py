@@ -7,13 +7,30 @@ Como utilizar:
     Instale a extensao Scraper do Chrome (https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd)
         ou algo similar;
     
-    Exporte a tabela HTML da fatura SEM O CABECALHO para uma panilha do Google Drive;
+	Acesse a tela da fatura do AMEX desejada, com a tabela HTML;
+	
+	Selecione os dados da fatura, clique com o direito e clique em "Scrape similar..."
+	
+    Exporte a tabela HTML da fatura para uma panilha do Google Drive;
+	
+	Remova o cabecalho e adicione uma coluna com a data inicial da fatura na planilha inteira;
     
     No Google Drive, clicar em File, Download as, CSV;
     
     Mova o arquivo para a mesma pasta deste script, salvando como input.csv;
     
     Execute este script, o arquivo de saida sera salvo como output.csv;
+	
+	Execute o script csv2ofx.bat
+	
+	Clique no botao Import e localize o arquivo output.csv que acabou de ser gerado;
+	
+	Em "Mapping" selecione o item "YNAB", em "Export To" selecione "OFXE";
+	
+	Clique no botao "Export" e salve o arquivo OFX;
+	
+	Importe o arquivo para o YNAB;
+	
 
 Input (no header):
     # Date, Description, Amount, Bill Start Date
@@ -23,7 +40,7 @@ Input (no header):
 Output:
     Date,Payee,Category,Memo,Outflow,Inflow
     07/25/10,Sample Payee,,Sample Memo for an outflow,100.00,
-    07/26/10,Sample Payee 2,,Sample memo for an inflow,,500.00
+    07/26/10,Sample Payee 2,,Sample Memo for an inflow,,500.00
 '''
 
 import csv
