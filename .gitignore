@@ -35,3 +35,7 @@ pip-log.txt
 .coverage
 .tox
 nosetests.xml
+
+# Akira
+*.csv
+*.ofx
