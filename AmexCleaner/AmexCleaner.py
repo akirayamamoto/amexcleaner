@@ -13,6 +13,8 @@ Como utilizar:
 	
     Exporte a tabela HTML da fatura para uma panilha do Google Drive;
 	
+	Remova a linha com o total de lancamentos;
+	
 	Remova o cabecalho e adicione uma coluna com a data inicial da fatura na planilha inteira;
     
     No Google Drive, clicar em File, Download as, CSV;
